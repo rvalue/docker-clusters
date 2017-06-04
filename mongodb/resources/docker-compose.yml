@@ -1,0 +1,43 @@
+version: '2'
+services:
+  node1:
+    hostname: node1
+    volumes:
+      - node1volume:/data
+    command: mongod --replSet rs0
+    image: mongo:3
+    ports:
+      - "30001:27017"
+    restart: always
+    networks: 
+      - mongonet1
+  node2:
+    hostname: node2
+    volumes:
+      - node2volume:/data
+    command: mongod --replSet rs0
+    image: mongo:3
+    ports:
+      - "30002:27017"
+    restart: always
+    networks: 
+      - mongonet2
+  node3:
+    hostname: node3
+    volumes:
+      - node3volume:/data
+    command: mongod --replSet rs0
+    image: mongo:3
+    ports:
+      - "30003:27017"
+    restart: always
+    networks: 
+      - mongonet3
+networks:
+  mongonet1:
+  mongonet2:
+  mongonet3:
+volumes:
+  node1volume:
+  node2volume:
+  node3volume:

@@ -1,5 +1,5 @@
 master:
-    image: elasticsearch:latest
+    image: elasticsearch:1
     restart: always
     command: "elasticsearch -Des.cluster.name=docker_elasticsearch -Des.node.master=true -Des.node.data=false"
     environment:
@@ -8,7 +8,7 @@ master:
       - "9200:9200"
       - "9300:9300"
 slave:
-    image: elasticsearch:latest
+    image: elasticsearch:1
     command: "elasticsearch -Des.cluster.name=docker_elasticsearch -Des.discovery.zen.ping.unicast.hosts=master"
     links:
       - master
