@@ -1,0 +1,17 @@
+version: '2'
+services:
+  node1:
+    image: neo4j:3.2
+    volumes:
+      - node1volume:/data
+    networks:
+      - node1network
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=none
+volumes:
+  node1volume:
+networks:
+  node1network:
