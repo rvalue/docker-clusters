@@ -2,9 +2,13 @@
 
 Got Docker ?
 
-This repo provides some basic clusters for rapid local development
+This repo provides some basic clusters for rapid local development.
 
-Documentation for usage for each in its appropriate folder.
+**Please do not use them in production!**
+
+Documentation for usage for each is in its appropriate folder.
+
+Kindly refer to LICENSE documents of each dependencies in their respective Docker image repositories. Also, if you find any license violation, please report in an issue.
 
 Currently supported clusters:
 
