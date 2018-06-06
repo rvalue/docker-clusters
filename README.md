@@ -16,6 +16,12 @@ Currently supported clusters:
 	* [v1.7][esv1]
 * MongoDB 
 	* [v3.4][mongov3]
+* Redis
+	* [v3][redis]
+* Neo4J
+	* [v3.2][neo4j]
+* MySQL
+	* [v5.6][mysql]
 
 ## Prerequisites
 
@@ -32,3 +38,6 @@ Incase you are not able to get Virtualbox working with Docker/Docker Machine, th
 [vbox-working]:   http://download.virtualbox.org/virtualbox/5.1.20/VirtualBox-5.1.20-114629-OSX.dmg
 [esv1]:           https://www.elastic.co/guide/en/elasticsearch/reference/1.7/index.html
 [mongov3]:        https://docs.mongodb.com/manual/release-notes/3.4/
+[neo4j]:          https://hub.docker.com/_/neo4j/
+[redis]:          https://hub.docker.com/_/redis/
+[mysql]:          https://hub.docker.com/_/mysql/

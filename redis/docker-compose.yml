@@ -1,0 +1,12 @@
+version: '2'
+services:
+  redis1:
+    hostname: redis1-host
+    volumes:
+      - redis1volume:/data
+    image: redis:3-alpine
+    ports:
+      - "6379:6379"
+volumes:
+  redis1volume:
+  

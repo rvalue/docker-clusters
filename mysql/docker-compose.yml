@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:3.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: test
+      MYSQL_USER: app
+      MYSQL_PASSWORD: apppassword 
+    ports:
+      - "3306:3306"
